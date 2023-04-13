@@ -2,10 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node .",
+    "dev": "nodemon --watch \"./src/**\" ./src/server.ts",
     "lint": "eslint ./src --ext .ts"
   },
   "keywords": [],
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.22",
     "typescript": "^5.0.4"
   }
 }
