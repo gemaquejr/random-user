@@ -79,6 +79,10 @@ function UserList() {
                     <h5>Address:</h5>
                     {user.address}
                   </div>
+                  <div>
+                    <h5>Password:</h5>
+                    {user.password}
+                  </div>
                 </li>
               )
             ))}
