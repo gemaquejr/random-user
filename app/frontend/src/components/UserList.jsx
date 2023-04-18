@@ -11,7 +11,7 @@ function UserList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const delay = setTimeout(async () => {
+    const fetchData = async () => {
       try {
         const response = await getAllUsers();
         const { data } = response;
@@ -21,8 +21,9 @@ function UserList() {
         setError('Failed to fetch users. Please try again later.');
         setIsLoading(false);
       }
-    }, 1000);
-    return () => clearTimeout(delay);
+    };
+
+    fetchData();
   }, []);
 
   const handleNextUser = () => {
@@ -50,11 +51,26 @@ function UserList() {
               index === currentIndex && (
                 <li key={user.id}>
                   <img src={user.photo} alt={user.name} />
-                  <div>{user.name}</div>
-                  <div>{user.email}</div>
-                  <div>{user.phone}</div>
-                  <div>{user.birthday}</div>
-                  <div>{user.address}</div>
+                  <div>
+                    <h5>Name:</h5>
+                    {user.name}
+                  </div>
+                  <div>
+                    <h5>Email:</h5>
+                    {user.email}
+                  </div>
+                  <div>
+                    <h5>Phone:</h5>
+                    {user.phone}
+                  </div>
+                  <div>
+                    <h5>Birthday:</h5>
+                    {user.birthday}
+                  </div>
+                  <div>
+                    <h5>Address:</h5>
+                    {user.address}
+                  </div>
                 </li>
               )
             ))}
