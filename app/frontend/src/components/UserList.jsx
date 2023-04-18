@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { getAllUsers } from '../services/requests';
 import Button from './Button';
 import Loading from './Loading';
+import Error from './Error';
 
 function UserList() {
   const [users, setUsers] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const delay = setTimeout(async () => {
@@ -15,8 +17,8 @@ function UserList() {
         const { data } = response;
         setUsers(data);
         setIsLoading(false);
-      } catch (error) {
-        console.error('Failed to fetch users:', error);
+      } catch (err) {
+        setError('Failed to fetch users. Please try again later.');
         setIsLoading(false);
       }
     }, 1000);
@@ -41,20 +43,23 @@ function UserList() {
       {isLoading ? (
         <Loading />
       ) : (
-        <ul>
-          {users.map((user, index) => (
-            index === currentIndex && (
-              <li key={user.id}>
-                <img src={user.photo} alt={user.name} />
-                <div>{user.name}</div>
-                <div>{user.email}</div>
-                <div>{user.phone}</div>
-                <div>{user.birthday}</div>
-                <div>{user.address}</div>
-              </li>
-            )
-          ))}
-        </ul>
+        <>
+          <Error message={error} />
+          <ul>
+            {users.map((user, index) => (
+              index === currentIndex && (
+                <li key={user.id}>
+                  <img src={user.photo} alt={user.name} />
+                  <div>{user.name}</div>
+                  <div>{user.email}</div>
+                  <div>{user.phone}</div>
+                  <div>{user.birthday}</div>
+                  <div>{user.address}</div>
+                </li>
+              )
+            ))}
+          </ul>
+        </>
       )}
       <div>
         <Button label="Previous" onClick={handlePreviousUser} />
