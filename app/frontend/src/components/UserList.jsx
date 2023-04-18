@@ -60,27 +60,27 @@ function UserList() {
                 <li key={user.id}>
                   <img src={user.photo} alt={user.name} />
                   <div>
-                    <h5>Name:</h5>
+                    <h5>Hi, My name is:</h5>
                     {user.name}
                   </div>
                   <div>
-                    <h5>Email:</h5>
+                    <h5>My email address is:</h5>
                     {user.email}
                   </div>
                   <div>
-                    <h5>Phone:</h5>
-                    {user.phone}
-                  </div>
-                  <div>
-                    <h5>Birthday:</h5>
+                    <h5>My birthday is:</h5>
                     {formatBirthday(user.birthday)}
                   </div>
                   <div>
-                    <h5>Address:</h5>
+                    <h5>My address is:</h5>
                     {user.address}
                   </div>
                   <div>
-                    <h5>Password:</h5>
+                    <h5>My phone number is:</h5>
+                    {user.phone}
+                  </div>
+                  <div>
+                    <h5>My password is:</h5>
                     {user.password}
                   </div>
                 </li>
