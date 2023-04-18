@@ -38,6 +38,14 @@ function UserList() {
     }
   };
 
+  const formatBirthday = (birthday) => {
+    const date = new Date(birthday);
+    const day = String(date.getDate());
+    const month = String(date.getMonth() + 1);
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
   return (
     <div>
       <h1>Users</h1>
@@ -65,7 +73,7 @@ function UserList() {
                   </div>
                   <div>
                     <h5>Birthday:</h5>
-                    {user.birthday}
+                    {formatBirthday(user.birthday)}
                   </div>
                   <div>
                     <h5>Address:</h5>
