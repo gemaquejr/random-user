@@ -48,53 +48,56 @@ function UserList() {
   };
 
   return (
-    <div>
-      <h1>Users</h1>
+    <>
       {isLoading ? (
         <Loading />
       ) : (
         <>
           <Error message={error} />
-          <div className={styles.container_user}>
-            {users.map((user, index) => (
-              index === currentIndex && (
-                <div className="user" key={user.id}>
-                  <img src={user.photo} alt={user.name} />
-                  <div>
-                    <h5>Hi, My name is:</h5>
-                    {user.name}
-                  </div>
-                  <div>
-                    <h5>My email address is:</h5>
-                    {user.email}
-                  </div>
-                  <div>
-                    <h5>My birthday is:</h5>
-                    {formatBirthday(user.birthday)}
-                  </div>
-                  <div>
-                    <h5>My address is:</h5>
-                    {user.address}
-                  </div>
-                  <div>
-                    <h5>My phone number is:</h5>
-                    {user.phone}
-                  </div>
-                  <div>
-                    <h5>My password is:</h5>
-                    {user.password}
-                  </div>
+          {users.map((user, index) => (
+            index === currentIndex && (
+            <div className={styles.container_user} key={user.id}>
+              <div className={styles.user_header}>
+                <div className={styles.user_name}>
+                  <p>Hi, My name is:</p>
+                  <h2>{user.name}</h2>
                 </div>
-              )
-            ))}
-          </div>
+                <figure className={styles.user_container_avatar}>
+                  <img src={user.photo} alt={user.name} />
+                </figure>
+              </div>
+              <div className={styles.container_user_data}>
+                <div className={styles.user_email}>
+                  <h5>Email:</h5>
+                  <p>{user.email}</p>
+                </div>
+                <div className={styles.user_birthday}>
+                  <h5>Birthday:</h5>
+                  <p>{formatBirthday(user.birthday)}</p>
+                </div>
+                <div className={styles.user_address}>
+                  <h5>Address:</h5>
+                  <p>{user.address}</p>
+                </div>
+                <div className={styles.user_phone}>
+                  <h5>Phone:</h5>
+                  <p>{user.phone}</p>
+                </div>
+                <div className={styles.user_password}>
+                  <h5>Password:</h5>
+                  <p>{user.password}</p>
+                </div>
+              </div>
+            </div>
+            )
+          ))}
         </>
       )}
-      <div>
+      <div className={styles.nav_buttons}>
         <Button label="Previous" onClick={handlePreviousUser} />
         <Button label="Next" onClick={handleNextUser} />
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,3 +1,103 @@
 .container_user {
     background: tomato;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(115,105,115,1);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(115,105,115,1);
+    box-shadow: 5px 5px 10px 0px rgba(115,105,115,1);
+    width: 40vw;
+    min-height: 65vh;    
+}
+
+.user_header {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.user_name {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_name > h2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.user_container_avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.user_container_avatar > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container_user_data {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container_user_data > div {
+    position: relative;
+    padding-left: 40px;
+}
+
+.user_email:before,
+.user_birthday:before,
+.user_address:before,
+.user_phone:before,
+.user_password:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.user_email:before {
+    background-image: url(../../assets/icons/email.png);
+}
+
+.user_birthday:before {
+    background-image: url(../../assets/icons/birthday.png);
+}
+
+.user_address:before {
+    background-image: url(../../assets/icons/address.png);
+}
+
+.user_phone:before {
+    background-image: url(../../assets/icons/phone.png);
+}
+
+.user_password:before {
+    background-image: url(../../assets/icons/padlock.png);
+}
+
+.nav_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
