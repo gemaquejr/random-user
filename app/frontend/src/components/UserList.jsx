@@ -54,10 +54,10 @@ function UserList() {
       ) : (
         <>
           <Error message={error} />
-          <ul>
+          <div className="container-user">
             {users.map((user, index) => (
               index === currentIndex && (
-                <li key={user.id}>
+                <div className="user" key={user.id}>
                   <img src={user.photo} alt={user.name} />
                   <div>
                     <h5>Hi, My name is:</h5>
@@ -83,10 +83,10 @@ function UserList() {
                     <h5>My password is:</h5>
                     {user.password}
                   </div>
-                </li>
+                </div>
               )
             ))}
-          </ul>
+          </div>
         </>
       )}
       <div>
