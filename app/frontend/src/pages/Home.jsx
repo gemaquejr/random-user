@@ -1,10 +1,13 @@
 import React from 'react';
-import UserList from '../components/UserList';
+import UserList from '../components/UserList/UserList';
 
 function Home() {
   return (
     <div>
-      <h1>RANDOM USER GENERATOR</h1>
+      <h1>
+        RANDOM USER
+        <span> GENERATOR</span>
+      </h1>
       <UserList />
     </div>
   );
