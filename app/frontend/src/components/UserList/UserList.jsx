@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { getAllUsers } from '../services/requests';
-import Button from './Button';
-import Loading from './Loading';
-import Error from './Error';
+import { getAllUsers } from '../../services/requests';
+import styles from './UserList.module.css';
+import Button from '../Button';
+import Loading from '../Loading';
+import Error from '../Error';
 
 function UserList() {
   const [users, setUsers] = useState([]);
@@ -54,7 +55,7 @@ function UserList() {
       ) : (
         <>
           <Error message={error} />
-          <div className="container-user">
+          <div className={styles.container_user}>
             {users.map((user, index) => (
               index === currentIndex && (
                 <div className="user" key={user.id}>
