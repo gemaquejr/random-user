@@ -4,7 +4,12 @@
 font-family: 'Jost', sans-serif; */
 
 body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
     font-family: 'Barlow', sans-serif;
+    font-size: 16px;
 }
 
 h1 {
