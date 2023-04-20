@@ -1,13 +1,13 @@
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
-import '../styles/Button.css';
+import styles from './Button.module.css';
 
 function Button(props) {
   const { onClick, label } = props;
 
   return (
-    <button className="c-button" type="button" onClick={onClick}>
+    <button className={styles.c_button} type="button" onClick={onClick}>
       {label}
     </button>
   );

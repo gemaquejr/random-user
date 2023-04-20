@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getAllUsers } from '../../services/requests';
 import styles from './UserList.module.css';
-import Button from '../Button';
-import Loading from '../Loading';
+import Button from '../Button/Button';
+import Loading from '../Loading/Loading';
 import Error from '../Error';
 
 function UserList() {

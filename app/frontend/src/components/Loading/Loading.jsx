@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/Loading.css';
+import styles from './Loading.module.css';
 
 function Loading() {
   return (
-    <div className="c-loader" />
+    <div className={styles.c_loader} />
   );
 }
 
