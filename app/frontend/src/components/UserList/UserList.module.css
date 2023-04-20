@@ -1,5 +1,5 @@
 .container_user {
-    background: tomato;
+    background: #bbb2b0;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 30px;
@@ -7,7 +7,8 @@
     -moz-box-shadow: 5px 5px 10px 0px rgba(115,105,115,1);
     box-shadow: 5px 5px 10px 0px rgba(115,105,115,1);
     width: 40vw;
-    min-height: 65vh;    
+    min-height: 65vh;  
+    font-weight: bold;
 }
 
 .user_header {
@@ -34,8 +35,8 @@
 }
 
 .user_container_avatar {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     border-radius: 15px;
     overflow: hidden;
 }
