@@ -57,17 +57,17 @@ Frontend: https://
 
 1. Clone o repositório do projeto em seu ambiente local usando o seguinte comando:
 
-### `git clone git@github.com:gemaquejr/random-user.git`
+- `git clone git@github.com:gemaquejr/random-user.git`
 
 2. Instala as dependências:
 
-### `npm install`
+- `npm install`
 
 3. 🐳 Executar o Projeto
 
 Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
 
-### `npm run compose:up`
+- `npm run compose:up`
 
 Com isso, iniciará:
 
