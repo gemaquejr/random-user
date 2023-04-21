@@ -67,23 +67,19 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
   * Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
 
     - `npm run compose:up`
+    
+3. Acesso ao Frontend
 
-  Com isso, iniciará:
+ * O Frontend estará disponível em http://localhost:3000 após a execução do projeto. Você pode acessar o aplicativo em seu navegador e visualizar os        resultados.
 
-    - o servidor backend;
+4. Acesso à API
 
-    - o banco de dados;
+ * A API do backend estará disponível em http://localhost:3001/users após a execução do projeto. Você pode usar ferramentas como Insomnia, Postman ou        até mesmo o navegador para acessar a API e visualizar os resultados.
 
-    - o frontend.
-
-3. Acesso à API
-
- * A API do backend estará disponível em http://localhost:3001/users após a execução do servidor. Você pode usar ferramentas como Insomnia, Postman ou      até   mesmo o navegador para acessar a API e visualizar os resultados.
-
-4. Contribuição
+5. Contribuição
 
   * Este projeto é de código aberto e aceita contribuições. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork e enviar um       pull request com suas alterações. Certifique-se de seguir as melhores práticas de codificação, incluindo a execução de testes e a revisão do código       antes de enviar as alterações.
 
-5. Licença
+6. Licença
 
   * Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [MIT](./LICENSE) para obter mais informações.
