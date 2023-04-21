@@ -52,6 +52,8 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
 - [Node.js](https://nodejs.org/en): Software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos     JavaScript fora de um navegador web.
 
+- [MySQL](https://www.mysql.com/): Sistema de gerenciamento de banco de dados (SGBD) relacional, ou seja, que utiliza a linguagem SQL como interface.
+
 - [Docker](https://www.docker.com/): Software de código aberto usado para implantar aplicativos dentro de containers virtuais.
 
 ## :hammer_and_wrench: Configuração do Projeto.
@@ -66,7 +68,7 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
 3. 🐳 Executar o Projeto
 
-  Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
+  * Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
 
     - `npm run compose:up`
 
