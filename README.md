@@ -72,7 +72,7 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
     - o servidor backend;
 
-    - habilitará o banco de dados;
+    - o banco de dados;
 
     - o frontend.
 
