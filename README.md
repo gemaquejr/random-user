@@ -82,12 +82,12 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
 4. Acesso à API
 
-  A API do backend estará disponível em http://localhost:3001/users após a execução do servidor. Você pode usar ferramentas como Insomnia, Postman ou até   mesmo o navegador para acessar a API e visualizar os resultados.
+ * A API do backend estará disponível em http://localhost:3001/users após a execução do servidor. Você pode usar ferramentas como Insomnia, Postman ou      até   mesmo o navegador para acessar a API e visualizar os resultados.
 
 5. Contribuição
 
-  Este projeto é de código aberto e aceita contribuições. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork e enviar um       pull request com suas alterações. Certifique-se de seguir as melhores práticas de codificação, incluindo a execução de testes e a revisão do código       antes de enviar as alterações.
+  * Este projeto é de código aberto e aceita contribuições. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork e enviar um       pull request com suas alterações. Certifique-se de seguir as melhores práticas de codificação, incluindo a execução de testes e a revisão do código       antes de enviar as alterações.
 
 6. Licença
 
-  Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
+  * Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
