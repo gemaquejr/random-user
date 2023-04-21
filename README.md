@@ -62,11 +62,7 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
   - `git clone git@github.com:gemaquejr/random-user.git`
 
-2. Instala as dependências:
-
-  - `npm install`
-
-3. 🐳 Executar o Projeto
+2. 🐳 Executar o Projeto
 
   * Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
 
@@ -80,14 +76,14 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
     - o frontend.
 
-4. Acesso à API
+3. Acesso à API
 
  * A API do backend estará disponível em http://localhost:3001/users após a execução do servidor. Você pode usar ferramentas como Insomnia, Postman ou      até   mesmo o navegador para acessar a API e visualizar os resultados.
 
-5. Contribuição
+4. Contribuição
 
   * Este projeto é de código aberto e aceita contribuições. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork e enviar um       pull request com suas alterações. Certifique-se de seguir as melhores práticas de codificação, incluindo a execução de testes e a revisão do código       antes de enviar as alterações.
 
-6. Licença
+5. Licença
 
   * Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [MIT](./LICENSE) para obter mais informações.
