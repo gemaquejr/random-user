@@ -90,4 +90,4 @@ O projeto foi implantado em um servidor de hospedagem e está disponível no seg
 
 6. Licença
 
-  * Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
+  * Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [MIT](./LICENSE) para obter mais informações.
