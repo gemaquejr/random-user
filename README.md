@@ -10,8 +10,9 @@ O objetivo deste projeto é utilizar uma API externa e gratuita (https://randomu
 
 O projeto foi implantado em um servidor de hospedagem e está disponível no seguinte endereço:
 
-Backend: https://
-Frontend: https://
+ - Backend: https://
+
+ - Frontend: https://
 
 ## 🚀 Tecnologia
 
