@@ -1,4 +1,4 @@
-# random-user
+# Random User
 
 Este é um projeto fullstack que consiste em um backend, um frontend e um banco de dados. O projeto consome dados de uma API externa e exibe os usuários em uma interface de usuário amigável.
 
@@ -57,34 +57,34 @@ Frontend: https://
 
 1. Clone o repositório do projeto em seu ambiente local usando o seguinte comando:
 
-- `git clone git@github.com:gemaquejr/random-user.git`
+  - `git clone git@github.com:gemaquejr/random-user.git`
 
 2. Instala as dependências:
 
-- `npm install`
+  - `npm install`
 
 3. 🐳 Executar o Projeto
 
-Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
+  Na pasta app do projeto, suba o container utilizando o docker-compose.yml. Utilize o comando:
 
-- `npm run compose:up`
+    - `npm run compose:up`
 
-Com isso, iniciará:
+  Com isso, iniciará:
 
-- o servidor backend;
+    - o servidor backend;
 
-- habilitará o banco de dados;
+    - habilitará o banco de dados;
 
-- o frontend.
+    - o frontend.
 
 4. Acesso à API
 
-A API do backend estará disponível em http://localhost:3001/users após a execução do servidor. Você pode usar ferramentas como Insomnia, Postman ou até mesmo o navegador para acessar a API e visualizar os resultados.
+  A API do backend estará disponível em http://localhost:3001/users após a execução do servidor. Você pode usar ferramentas como Insomnia, Postman ou até   mesmo o navegador para acessar a API e visualizar os resultados.
 
 5. Contribuição
 
-Este projeto é de código aberto e aceita contribuições. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork e enviar um pull request com suas alterações. Certifique-se de seguir as melhores práticas de codificação, incluindo a execução de testes e a revisão do código antes de enviar as alterações.
+  Este projeto é de código aberto e aceita contribuições. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork e enviar um       pull request com suas alterações. Certifique-se de seguir as melhores práticas de codificação, incluindo a execução de testes e a revisão do código       antes de enviar as alterações.
 
 6. Licença
 
-Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
+  Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
