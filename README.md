@@ -1,18 +1,10 @@
 # Random User
 
-Este é um projeto fullstack que consiste em um backend, um frontend e um banco de dados. O projeto consome dados de uma API externa e exibe os usuários em uma interface de usuário amigável.
+Este é um projeto fullstack que consiste em um backend, um frontend e um banco de dados. O projeto consome dados de uma API externa e exibe os dados em uma interface de usuário amigável.
 
 ![preview](.github/preview.png)
 
 O objetivo deste projeto é utilizar uma API externa e gratuita (https://randomuser.me/api/) para buscar informações de dados aleatórios de usuários, armazenar esses dados em um banco de dados MySQL utilizando o Sequelize ORM no backend desenvolvido em Node.js com TypeScript e Express, e exibi-los no frontend desenvolvido em React com CSS.
-
-## 🔑 Deploy
-
-O projeto foi implantado em um servidor de hospedagem e está disponível no seguinte endereço:
-
- - Backend: https://
-
- - Frontend: https://
 
 ## 🚀 Tecnologia
 
